@@ -6,7 +6,7 @@
 
 const char* mqRecName = "/mymq";
 
-int main(int argc, char** argv)
+int mainRV(int argc, char** argv)
 {
     mqd_t mq = mq_open(mqRecName, O_RDONLY | O_CREAT, 0666, NULL);
     if (mq == -1)
